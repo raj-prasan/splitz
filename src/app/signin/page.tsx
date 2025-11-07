@@ -1,7 +1,7 @@
 import { GalleryVerticalEnd } from "lucide-react"
 import { Split } from "lucide-react";
 import Image from "next/image";
-import LayoutTextFlip from "./../../components/ui/layout-text-flip"
+import LayoutTextFlip from "../../../components/ui/layout-text-flip"
 import { LoginForm } from "@/components/login-form"
 import signinimage from './../../../public/signin-image.jpg'
 export default function LoginPage() {

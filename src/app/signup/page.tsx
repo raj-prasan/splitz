@@ -1,5 +1,5 @@
 import { GalleryVerticalEnd } from "lucide-react"
-import LayoutTextFlip from "./../../components/ui/layout-text-flip"
+import LayoutTextFlip from "../../../components/ui/layout-text-flip"
 import { SignupForm } from "@/components/signup-form"
 
 export default function SignupPage() {
