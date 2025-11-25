@@ -84,7 +84,6 @@ const New = () => {
   }
   return (
     <div className='min-h-screen bg-background'>
-      <BackgroundLines>
       <div>
         <div className='container mx-auto px-6 py-4'>
        <Link href="/" className='flex items-center gap-2 text-2xl font-bold'>
@@ -146,7 +145,6 @@ const New = () => {
       <p className='bg-clip-text text-transparent text-center bg-linear-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-sm md:text-sm lg:text-sm font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight mb-40'>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply</p>
       
       <Footer/>
-      </BackgroundLines>
     </div>
   )
 }
