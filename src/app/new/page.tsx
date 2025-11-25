@@ -3,7 +3,7 @@ import ThemeToggle from '@/components/ThemeToggle'
 import { Label } from '@radix-ui/react-label'
 import { Split,Plus } from 'lucide-react'
 import { Input } from '@/components/ui/input'
-
+import { BackgroundLines } from '@/components/ui/background-lines'
 import Link from 'next/link'
 import React from 'react'
 import { Button } from '@/components/ui/button'
@@ -84,6 +84,7 @@ const New = () => {
   }
   return (
     <div className='min-h-screen bg-background'>
+      <BackgroundLines>
       <div>
         <div className='container mx-auto px-6 py-4'>
        <Link href="/" className='flex items-center gap-2 text-2xl font-bold'>
@@ -123,7 +124,7 @@ const New = () => {
       {/* Groups list section - shows saved groups from localStorage */}
       <section className='container mx-auto px-6 max-w-5xl mt-8'>
         <div className='border rounded-2xl bg-card p-6 shadow-sm'>
-          <h3 className='text-lg font-semibold text-foreground mb-4'>Saved groups</h3>
+          <h3 className='text-xl font-semibold text-foreground text-center mb-4 bg-clip-text text-transparent text-center bg-linear-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-xl md:text-3xl lg:text-3xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight '>Saved groups</h3>
           {groups.length === 0 ? (
             <p className='text-sm text-muted-foreground text-center'>No groups found. Groups you create will be listed here.</p>
           ) : (
@@ -143,8 +144,9 @@ const New = () => {
         </div>
       </section>
       <p className='bg-clip-text text-transparent text-center bg-linear-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-sm md:text-sm lg:text-sm font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight mb-40'>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply</p>
-      <Footer/>
       
+      <Footer/>
+      </BackgroundLines>
     </div>
   )
 }

@@ -6,7 +6,7 @@ import { Split } from 'lucide-react'
 
 function Navbar() {
   const navItems = [
-    { name: "Home", href: "/" },
+    { name: "Home", href: "/home" },
     { name: "Features", href: "#features" },
     { name: "Pricing", href: "#pricing" },
     { name: "About", href: "#about" },

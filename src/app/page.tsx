@@ -4,7 +4,7 @@ import { ArrowRight, Users, Receipt, Zap, CheckCircle2, DollarSign, Split } from
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import Image from "next/image";
-import Dashboard from './../../public/dashboard.png'
+import Dashboard from './../../public/1.png'
 import Footer from "@/components/Footer";
 
 export default function Home() {
